@@ -1,0 +1,50 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .math-symbol {
+        fill: rgba(255, 255, 255, 0.08);
+        font-family: 'Segoe UI', Arial, sans-serif;
+        font-weight: 300;
+      }
+      .number {
+        font-size: 14px;
+      }
+      .operator {
+        font-size: 16px;
+        font-weight: 400;
+      }
+      .advanced {
+        font-size: 12px;
+      }
+    </style>
+  </defs>
+  
+  <!-- Números -->
+  <text x="15" y="20" class="math-symbol number">7</text>
+  <text x="75" y="35" class="math-symbol number">2</text>
+  <text x="35" y="70" class="math-symbol number">9</text>
+  <text x="95" y="85" class="math-symbol number">5</text>
+  
+  <!-- Operadores básicos -->
+  <text x="45" y="25" class="math-symbol operator">+</text>
+  <text x="85" y="55" class="math-symbol operator">×</text>
+  <text x="25" y="95" class="math-symbol operator">÷</text>
+  <text x="65" y="105" class="math-symbol operator">−</text>
+  
+  <!-- Símbolos matemáticos avanzados -->
+  <text x="105" y="25" class="math-symbol advanced">π</text>
+  <text x="15" y="50" class="math-symbol advanced">√</text>
+  <text x="55" y="40" class="math-symbol advanced">∑</text>
+  <text x="105" y="70" class="math-symbol advanced">∞</text>
+  <text x="15" y="115" class="math-symbol advanced">∫</text>
+  <text x="75" y="15" class="math-symbol advanced">²</text>
+  
+  <!-- Puntos decimales y símbolos -->
+  <circle cx="40" cy="60" r="1.5" fill="rgba(255, 255, 255, 0.06)"/>
+  <circle cx="80" cy="100" r="1.5" fill="rgba(255, 255, 255, 0.06)"/>
+  <circle cx="100" cy="45" r="1.5" fill="rgba(255, 255, 255, 0.06)"/>
+  
+  <!-- Líneas sutiles representando calculadora -->
+  <rect x="50" y="80" width="20" height="2" fill="rgba(255, 255, 255, 0.04)"/>
+  <rect x="10" y="40" width="15" height="1" fill="rgba(255, 255, 255, 0.04)"/>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Fondo de la calculadora -->
+  <rect width="32" height="32" rx="6" fill="#1e1e2f"/>
+  
+  <!-- Pantalla -->
+  <rect x="3" y="3" width="26" height="8" rx="2" fill="#292d3e"/>
+  
+  <!-- Texto en pantalla -->
+  <text x="27" y="8.5" font-family="Arial" font-size="6" fill="#fff" text-anchor="end">123</text>
+  
+  <!-- Botones -->
+  <!-- Fila 1 -->
+  <rect x="3" y="13" width="5" height="4" rx="1" fill="#ff5c5c"/>
+  <rect x="10" y="13" width="5" height="4" rx="1" fill="#ff5c5c"/>
+  <rect x="17" y="13" width="5" height="4" rx="1" fill="#ff5c5c"/>
+  <rect x="24" y="13" width="5" height="4" rx="1" fill="#ffb84d"/>
+  
+  <!-- Fila 2 -->
+  <rect x="3" y="18" width="5" height="4" rx="1" fill="#292d3e"/>
+  <rect x="10" y="18" width="5" height="4" rx="1" fill="#292d3e"/>
+  <rect x="17" y="18" width="5" height="4" rx="1" fill="#292d3e"/>
+  <rect x="24" y="18" width="5" height="4" rx="1" fill="#ffb84d"/>
+  
+  <!-- Fila 3 -->
+  <rect x="3" y="23" width="5" height="4" rx="1" fill="#292d3e"/>
+  <rect x="10" y="23" width="5" height="4" rx="1" fill="#292d3e"/>
+  <rect x="17" y="23" width="5" height="4" rx="1" fill="#292d3e"/>
+  <rect x="24" y="23" width="5" height="4" rx="1" fill="#ffb84d"/>
+  
+  <!-- Fila 4 -->
+  <rect x="3" y="28" width="12" height="3" rx="1" fill="#292d3e"/>
+  <rect x="17" y="28" width="5" height="3" rx="1" fill="#292d3e"/>
+  <rect x="24" y="28" width="5" height="3" rx="1" fill="#ffb84d"/>
+  
+  <!-- Símbolos en algunos botones -->
+  <text x="5.5" y="16" font-family="Arial" font-size="2.5" fill="#fff" text-anchor="middle">7</text>
+  <text x="12.5" y="16" font-family="Arial" font-size="2.5" fill="#fff" text-anchor="middle">8</text>
+  <text x="19.5" y="16" font-family="Arial" font-size="2.5" fill="#fff" text-anchor="middle">9</text>
+  <text x="26.5" y="16" font-family="Arial" font-size="2.5" fill="#fff" text-anchor="middle">+</text>
+</svg>

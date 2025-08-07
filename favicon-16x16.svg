@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+  <!-- Fondo de la calculadora -->
+  <rect width="16" height="16" rx="3" fill="#1e1e2f"/>
+  
+  <!-- Pantalla -->
+  <rect x="1" y="1" width="14" height="4" rx="1" fill="#292d3e"/>
+  
+  <!-- Texto en pantalla -->
+  <text x="14" y="3.5" font-family="Arial" font-size="2.5" fill="#fff" text-anchor="end">123</text>
+  
+  <!-- Botones simplificados -->
+  <!-- Fila 1 -->
+  <rect x="1" y="6" width="3" height="2" rx="0.5" fill="#ff5c5c"/>
+  <rect x="5" y="6" width="3" height="2" rx="0.5" fill="#292d3e"/>
+  <rect x="9" y="6" width="3" height="2" rx="0.5" fill="#292d3e"/>
+  <rect x="13" y="6" width="2" height="2" rx="0.5" fill="#ffb84d"/>
+  
+  <!-- Fila 2 -->
+  <rect x="1" y="9" width="3" height="2" rx="0.5" fill="#292d3e"/>
+  <rect x="5" y="9" width="3" height="2" rx="0.5" fill="#292d3e"/>
+  <rect x="9" y="9" width="3" height="2" rx="0.5" fill="#292d3e"/>
+  <rect x="13" y="9" width="2" height="2" rx="0.5" fill="#ffb84d"/>
+  
+  <!-- Fila 3 -->
+  <rect x="1" y="12" width="7" height="3" rx="0.5" fill="#292d3e"/>
+  <rect x="9" y="12" width="3" height="3" rx="0.5" fill="#292d3e"/>
+  <rect x="13" y="12" width="2" height="3" rx="0.5" fill="#ffb84d"/>
+</svg>

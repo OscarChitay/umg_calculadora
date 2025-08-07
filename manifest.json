@@ -1,0 +1,23 @@
+{
+  "name": "Calculadora UMG",
+  "short_name": "Calc UMG",
+  "description": "Calculadora web moderna desarrollada para Universidad Mariano Gálvez",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1e1e2f",
+  "theme_color": "#292d3e",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "favicon-16x16.svg",
+      "sizes": "16x16",
+      "type": "image/svg+xml"
+    }
+  ]
+}

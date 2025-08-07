@@ -2,33 +2,330 @@
   box-sizing: border-box;
 }
 
+header {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  margin: 10px 0;
+  font-size: 2rem;
+}
+
+header p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.github-icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #ffb84d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.github-icon:hover {
+  background-color: #24292e;
+  transform: scale(1.1);
+}
+
+.github-icon svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
 body {
   margin: 0;
-  padding: 0;
+  padding: 10px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #292d3e;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .calculadora {
   background-color: #1e1e2f;
-  border-radius: 40px;
+  border-radius: 20px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
-  width: 400px;
-  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  margin: 0 auto;
 }
 
 .display {
   background-color: #292d3e;
   border-radius: 10px;
-  padding: 10px;
+  padding: 20px;
   margin: 10px 0;
   color: #fff;
   text-align: right;
-  padding-top: 30px;
-  padding-bottom: 2px;
-  font-size: 3em;
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
+
+.botones {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: #292d3e;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover {
+  background-color: #3a3f5c;
+  transform: scale(1.05);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn0 {
+  background-color: #292d3e;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  grid-column: span 2;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn0:hover {
+  background-color: #3a3f5c;
+  transform: scale(1.05);
+}
+
+.btn0:active {
+  transform: scale(0.95);
+}
+
+.clearall,
+.clear,
+.porcentaje {
+  background-color: #ff5c5c;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clearall:hover,
+.clear:hover,
+.porcentaje:hover {
+  background-color: #ff7a7a;
+  transform: scale(1.05);
+}
+
+.clearall:active,
+.clear:active,
+.porcentaje:active {
+  transform: scale(0.95);
+}
+
+.operador {
+  background-color: #ffb84d;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.operador:hover {
+  background-color: #ffc470;
+  transform: scale(1.05);
+}
+
+.operador:active {
+  transform: scale(0.95);
+}
+
+/* Media Queries para Responsive Design */
+
+/* Tablets */
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+  
+  .calculadora {
+    max-width: 350px;
+    padding: 15px;
+    border-radius: 15px;
+  }
+  
+  .botones {
+    gap: 8px;
+  }
+  
+  .github-icon {
+    width: 35px;
+    height: 35px;
+    top: 15px;
+    right: 15px;
+  }
+  
+  .github-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  header h1 {
+    font-size: 1.8rem;
+  }
+  
+  header p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+  
+  .calculadora {
+    max-width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    margin: 0 5px;
+  }
+  
+  .botones {
+    gap: 6px;
+    margin-top: 15px;
+  }
+  
+  .btn,
+  .btn0,
+  .clearall,
+  .clear,
+  .porcentaje,
+  .operador {
+    padding: 15px;
+    min-height: 50px;
+    border-radius: 8px;
+  }
+  
+  .display {
+    padding: 15px;
+    min-height: 50px;
+    margin: 8px 0;
+    border-radius: 8px;
+  }
+  
+  .github-icon {
+    width: 30px;
+    height: 30px;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .github-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  header {
+    margin-bottom: 15px;
+  }
+  
+  header h1 {
+    font-size: 1.5rem;
+    margin: 5px 0;
+  }
+  
+  header p {
+    font-size: 0.75rem;
+    margin: 3px 0;
+  }
+}
+
+/* Móviles muy pequeños */
+@media (max-width: 320px) {
+  .calculadora {
+    padding: 8px;
+    margin: 0 2px;
+  }
+  
+  .botones {
+    gap: 4px;
+  }
+  
+  .btn,
+  .btn0,
+  .clearall,
+  .clear,
+  .porcentaje,
+  .operador {
+    padding: 12px;
+    min-height: 45px;
+  }
+  
+  .display {
+    padding: 12px;
+    min-height: 45px;
+  }
+  
+  header h1 {
+    font-size: 1.3rem;
+  }
+  
+  header p {
+    font-size: 0.7rem;
+  }
 }

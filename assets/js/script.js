@@ -50,9 +50,11 @@ function clearAll() {
   operator = null;
 }
 
-// ===== FUNCIÓN: LIMPIAR ENTRADA ACTUAL (C) =====
+// ===== FUNCIÓN: BORRAR ÚLTIMO DÍGITO (C) =====
 function clearEntry() {
-  displayValue = '0';
+  if (displayValue !== '0' && displayValue !== 'Error') {
+    displayValue = displayValue.slice(0, -1) || '0';
+  }
 }
 
 // ===== FUNCIÓN: CALCULAR PORCENTAJE =====

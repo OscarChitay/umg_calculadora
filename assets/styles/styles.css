@@ -25,7 +25,7 @@ header p {
   right: 20px;
   width: 40px;
   height: 40px;
-  background-color: #ffb84d;
+  background-color: #3a3f5c;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -195,43 +195,6 @@ body {
 
 /* Media Queries para Responsive Design */
 
-/* Tablets */
-@media (max-width: 768px) {
-  body {
-    padding: 15px;
-  }
-  
-  .calculadora {
-    max-width: 350px;
-    padding: 15px;
-    border-radius: 15px;
-  }
-  
-  .botones {
-    gap: 8px;
-  }
-  
-  .github-icon {
-    width: 35px;
-    height: 35px;
-    top: 15px;
-    right: 15px;
-  }
-  
-  .github-icon svg {
-    width: 20px;
-    height: 20px;
-  }
-  
-  header h1 {
-    font-size: 1.8rem;
-  }
-  
-  header p {
-    font-size: 0.8rem;
-  }
-}
-
 /* Móviles */
 @media (max-width: 480px) {
   body {
@@ -292,40 +255,5 @@ body {
   header p {
     font-size: 0.75rem;
     margin: 3px 0;
-  }
-}
-
-/* Móviles muy pequeños */
-@media (max-width: 320px) {
-  .calculadora {
-    padding: 8px;
-    margin: 0 2px;
-  }
-  
-  .botones {
-    gap: 4px;
-  }
-  
-  .btn,
-  .btn0,
-  .clearall,
-  .clear,
-  .porcentaje,
-  .operador {
-    padding: 12px;
-    min-height: 45px;
-  }
-  
-  .display {
-    padding: 12px;
-    min-height: 45px;
-  }
-  
-  header h1 {
-    font-size: 1.3rem;
-  }
-  
-  header p {
-    font-size: 0.7rem;
   }
 }
